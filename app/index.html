@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html ng-app="app" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <title>Mark Chambers - Marksy Development Ltd.</title>
+        <meta name="description" content="Mark Chambers (marksy.com) - Front End Developer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script src="vendor/js/modernizr-2.8.3.min.js"></script>
+		
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Raleway:200" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="app/css/main.css" />
+
+		
+		<!-- angular which includes the plugins-->
+		<script src="vendor/js/angular.min.js" type="text/javascript"></script>
+		<script src="app/js/app.js" type="text/javascript"></script>
+				
+    </head>
+    <body>
+		
+		<nav ng-controller="MenuController">
+			<h1><a href="#/" title="Mark Chambers - home">M<span class="hideme">a</span>r<span class="hideme">k</span><span class="alt-color">Chambers</span></a> <span class="menu-icon"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></h1>
+			<p class="hide-access"><strong>Main navigation:</strong></p>
+			<ul>
+				<li ng-class="{ active: isActive('/about')}"><p><a href="#/about">About <span class="arrow"></span></a></p></li>
+				<li ng-class="{ active: isActive('/clients')}"><p><a href="#/clients">Clients <span class="arrow"></span></a></p></li>
+				<li ng-class="{ active: isActive('/contact')}"><p><a href="#/contact">Contact <span class="arrow"></span></a></p></li>
+			</ul>
+		</nav>
+
+		<hr />	
+		
+		<div id="view" ng-view></div>
+		
+		<noscript>
+			<article class="notice">
+				<h1>Damnit, no.js</h1>
+				<p>This site uses latest technologies including Javascript, which it looks like it's disabled or your browser doesn't support it.</p>
+				<p>You can contact me on <a href="mailto:&#x6D;&#x65;&#x40;&#x6D;&#x61;&#x72;&#x6B;&#x73;&#x79;&#x2E;&#x63;&#x6F;&#x6D;">&#x6D;&#x65;&#x40;&#x6D;&#x61;&#x72;&#x6B;&#x73;&#x79;&#x2E;&#x63;&#x6F;&#x6D;</a> or phone <span rel="telephone">+447936561301</span>.</p>
+			</article>
+		</noscript>
+
+		<hr />
+
+		<footer id="sosumi">
+			<p class="hide-access"><strong>Social links:</strong></p>
+			<ul>
+				<li class="github"><a href="https://github.com/marksy/" target="_blank" title="View Mark Chambers on Github">Github</a></li>
+				<li class="twitter"><a href="https://twitter.com/marksy" target="_blank" title="View Mark Chambers on Twitter">Twitter</a></li>
+				<li class="linkedin"><a href="https://www.linkedin.com/profile/view?id=12902546" target="_blank" title="View Mark Chambers on LinkedIn">LinkedIn</a></li>
+			</ul>
+			
+			<p>All Rights Reserved. &copy; 2014 <a href="http://marksy.com" title="Marksy">marksy ltd</a></p>
+		</footer>
+
+		<script src="vendor/js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="app/js/init.js" type="text/javascript" charset="utf-8"></script>
+		
+
+        <script>
+            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+//             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+//             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+//             e.src='//www.google-analytics.com/analytics.js';
+//             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+//             ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
