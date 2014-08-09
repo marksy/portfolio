@@ -5,14 +5,17 @@
 		<p>Below is a list of some projects I've been working on during my employment at iris worldwide. Some of the sites below can't be linked to because they were promotions that ran for a short period. The latest projects start at the top. </p>
 		
 		<h2><a href="https://aftersales.mini.co.uk/" title="MINI Aftersales - opens in a new window" target="_blank">MINI, Aftersales</a></h2>
-		<img src="../app/images/clients/mini-02.jpg" width="1154" height="649" alt="MINI">
-		<p class="show-section" ng-click="app.minias=!app.minias"><span class="link"><span ng-if="!app.minias">Show</span><span ng-if="app.minias">Hide</span> details</span></p>	
+		<div class="image-wrap">
+			<img src="../app/images/clients/mini-02.jpg" width="1154" height="649" alt="MINI">
+			<p class="show-section" ng-click="app.minias=!app.minias"><span class="link"><span ng-if="!app.minias"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.minias"><span class="icon-wrap-close"></span>Hide</span> details</span></p>
+	</div>
 				
 		<section ng-if="app.minias">
 			<div class="wrap">
 				<p>The MINI Aftersales project was one of my latest, and most enjoyable projects to work on. We were tasked to create a vehicle registration lookup and display a list of services availble for upgrade or renew if they qualify.</p> 
 				<p>The project had to fit into MINI's existing site, which meant we had to include it as an iFrame. However it's likely that the project will be included natively in future revisions of the MINI site.</p> 
 				<p>MINI Aftersales was created in mind of all devices, not just desktop.</p>
+				<p>Technologies include:</p>
 				<ul class="bxslider">
 					<li> <p>Sass/CSS</p></li>
 					<li> <p>HTML 5</p></li>
@@ -26,25 +29,48 @@
 	<hr />
 	
 		<h2>Nicoventures, Voke</h2>
-		<p>Voke is a nicotine delivery product, which is similar to conventional e-cigarettes. We were asked to build a registration and holding page for Voke until their product is certified and available for public sale. Several revisions of the site were made to appease the client.</p> 
-		<p>Technolgies include HTML, CSS and Microsoft .net framework (data capture).</p>
-		<p class="show-section" ng-click="app.voke=!app.voke"><span class="link vb"><span ng-if="!app.voke">Show</span><span ng-if="app.voke">Hide</span> details</span></p>	
-		
-		<p class="note">*Product awaiting certification.</p>
-		
+		<div class="image-wrap">
+			<img src="../app/images/clients/temp.png" width="1154" height="649" alt="TEMP">
+			<p class="show-section" ng-click="app.voke=!app.voke"><span class="link"><span ng-if="!app.voke"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.voke"><span class="icon-wrap-close"></span>Hide</span> details</span></p>
+	</div>
+				
 		<section ng-if="app.voke">
 			<div class="wrap">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<ul>
-					<li> <p>something</p></li>
-					<li> <p>something</p></li>
-					<li> <p>something</p></li>
-					<li> <p>something</p></li>
+		<p>Voke was a nicotine delivery product, which was similar to conventional e-cigarettes. We were asked to build a registration and holding page for Voke until their product was certified and available for public sale. Several revisions of the site were made to appease the client.</p> 
+		<p>Due to product, certification and client issues, the project was eventually scraped.</p>
+				<p>Technologies include:</p>
+				<ul class="bxslider">
+					<li> <p>Sass/CSS</p></li>
+					<li> <p>HTML 5</p></li>
+					<li> <p>jQuery/Javascript</p></li>
+					<li> <p>Microsoft .net</p></li>
 				</ul>
 			</div>
 		</section>
-		
-		<hr />
+						
+	<hr />
+	
+		<!-- <h2>CLIENT, PROJECT</h2>
+		<div class="image-wrap">
+			<img src="../app/images/clients/temp.png" width="1154" height="649" alt="TEMP">
+			<p class="show-section" ng-click="app.project=!app.project"><span class="link"><span ng-if="!app.project"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.project"><span class="icon-wrap-close"></span>Hide</span> details</span></p>
+	</div>
+
+		<section ng-if="app.project">
+			<div class="wrap">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Technologies include:</p>
+				<ul class="bxslider">
+					<li> <p>Sass/CSS</p></li>
+					<li> <p>HTML 5</p></li>
+					<li> <p>jQuery/Javascript</p></li>
+					<li> <p>Microsoft .net</p></li>
+				</ul>
+			</div>
+		</section>
+
+	<hr /> -->
+	
 	
 		<h2>Adidas, Vamos Leo</h2>
 		<p>Before the World Cup 2014 started, Adidas asked us to create a Facebook tab to promote their star player, Leo Messi. A multi-platform app drove users to the Facebook page where users could find more information about Adidas products and keep up-to-date with all things Messi via the Stackla social media aggregator.</p>

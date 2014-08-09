@@ -602,6 +602,7 @@ nav {
 	a.link,
 	span.link {
 		background-color: $green;
+		display: block;
 	}
 	a.link:hover {
 		background-color: darken($green,10%);
@@ -609,13 +610,41 @@ nav {
 	section {
 		background-color: $green;
 	}
-	img {
+	.image-wrap {
+		position: relative;
 		max-width: 768px;
-		width: 100%;
-		height: auto;
-		clear: both;
-		display: block;
-		margin-bottom: 1em;
+		img {
+			max-width: 768px;
+			width: 100%;
+			height: auto;
+			clear: both;
+			display: block;
+			margin: 2em 0 2em 0;
+			box-shadow: 0px 3px 25px rgb(0,0,0);
+			box-shadow: 0px 3px 25px rgba(0,0,0,.75);
+		}
+		.show-section {
+			position: absolute;
+			bottom: -67px;
+			right: 0px;
+			
+			.icon-wrap-close {
+				width: 16px;
+				height: 16px;
+				margin: 5px 5px 0 0;
+				background: url('../images/icon-close.png') center center no-repeat;
+				display: block;
+				float: left;
+			}
+			.icon-wrap-show {
+				width: 18px;
+				height: 17px;
+				margin: 2px 5px 0 0;
+				background: url('../images/icon-close.png') -141px -133px no-repeat;
+				display: block;
+				float: left;
+			}
+		}
 	}
 }
 #contact {
