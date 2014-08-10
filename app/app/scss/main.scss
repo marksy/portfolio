@@ -607,6 +607,9 @@ nav {
 	a.link:hover {
 		background-color: darken($green,10%);
 	}
+	.panel {
+		padding-bottom: 8em;
+	}
 	section {
 		background-color: $green;
 	}
@@ -679,7 +682,7 @@ nav {
 .panel {
 	margin: 2em 0;
 	padding: 5em;
-	min-height: 270px;
+	min-height: 520px;
 	-webkit-transition: padding .3s;
 	transition: padding .3s;
 
@@ -978,7 +981,7 @@ nav {
 		section {
 			margin: 0 -1em;
 			.wrap {
-				padding: 1em;
+				padding: 3.4em 1em 1em;
 			}
 			
 			&.jumbotron {

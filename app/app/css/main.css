@@ -406,6 +406,8 @@ nav {
   display: block; }
 #clients a.link:hover {
   background-color: #008451; }
+#clients .panel {
+  padding-bottom: 8em; }
 #clients section {
   background-color: #00B771; }
 #clients .image-wrap {
@@ -456,7 +458,7 @@ nav {
 .panel {
   margin: 2em 0;
   padding: 5em;
-  min-height: 270px;
+  min-height: 520px;
   -webkit-transition: padding 0.3s;
   transition: padding 0.3s; }
   .panel p {
@@ -640,7 +642,7 @@ nav {
     .panel section {
       margin: 0 -1em; }
       .panel section .wrap {
-        padding: 1em; }
+        padding: 3.4em 1em 1em; }
       .panel section.jumbotron {
         padding: 1em 0em; }
         .panel section.jumbotron h2 {
