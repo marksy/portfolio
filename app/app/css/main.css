@@ -410,6 +410,9 @@ nav {
   padding-bottom: 8em; }
 #clients section {
   background-color: #00B771; }
+  #clients section .image img {
+    width: 100%;
+    height: auto; }
 #clients .image-wrap {
   position: relative;
   max-width: 768px; }

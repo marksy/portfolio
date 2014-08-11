@@ -612,6 +612,14 @@ nav {
 	}
 	section {
 		background-color: $green;
+		
+		.image {
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 	.image-wrap {
 		position: relative;
