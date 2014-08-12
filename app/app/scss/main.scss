@@ -592,7 +592,7 @@ nav {
 	section {
 		background-color: $vibrantBlue;
 	}
-}
+} 
 #clients {
 	
 	a {
@@ -618,6 +618,14 @@ nav {
 			img {
 				width: 100%;
 				height: auto;
+			}
+		}
+		.rn-carousel-slides {
+			img {
+				max-width: 768px;
+				height: auto;
+				margin: 0 auto;
+				display: block;
 			}
 		}
 	}
@@ -657,6 +665,7 @@ nav {
 			}
 		}
 	}
+	
 }
 #contact {
 
