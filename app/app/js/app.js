@@ -32,41 +32,19 @@ function MenuController($scope, $location)
 	};
 }
 
+function gaController($scope, $location, $window) {
+  $scope.$on('$viewContentLoaded', function(event) {
+    $window.ga.push(['_trackPageview', $location.path()]);
+  });
+}
 
+//unused controllers
 app.controller('ClientController', function($scope) {
 });
-
 app.controller('ContactController', function($scope) {
 });
-
 app.controller('AboutController', function($scope) {
 });
-
-
 app.controller('HomeController', function($scope) {
-	// $scope.title = "Home";
-// 	$scope.message = "Mouse over the images to see the directives at work";
-//
-// 	$scope.logout = function() {
-// 		AuthenticationService.logout();
-// 	};
 });
 
-
-
-// app.directive('showsMessageWhenHovered', function() {
-// 	return {
-// 		restrict: 'A',
-// 		link: function(scope, element, attributes) {
-// 			var originalMessage = scope.message;
-// 			element.bind('mouseover', function(){
-// 				scope.message = attributes.message;
-// 				scope.$apply();
-// 			});
-// 			element.bind('mouseout', function(){
-// 				scope.message = originalMessage;
-// 				scope.$apply();
-// 			});
-// 		}
-// 	};
-// });
